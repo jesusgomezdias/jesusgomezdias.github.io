@@ -3,46 +3,70 @@
 <head>
     <meta charset="utf-8">
     <title>Jesús Gómez - Currículum</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-	<header>
-		<h1>Jesús Gómez - AUXILIAR INFORMATICO</h1>
-		<p>jesusgomezdias@outlook.com </p>
-	</header>
+    <header>
+        <h1>Jesús Gómez</h1>
+        <nav>
+            <ul>
+                <li><a href="#experiencia">Experiencia laboral</a></li>
+                <li><a href="#cursos">Cursos AFD</a></li>
+                <li><a href="#idiomas">Idiomas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#repos">Repositorios en Github</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="experiencia">
+            <h2>Experiencia laboral</h2>
+            <ul>
+                <li>
+                    <h3>AUXILIAR INFORMÁTICO</h3>
+                    <p>Electrodomésticos Alfer - 80 Horas</p>
+                </li>
+                <li>
+                    <h3>AUXILIAR INFORMÁTICO</h3>
+                    <p>PCBOX Ourense - 80 horas</p>
+                </li>
+            </ul>
+        </section>
 
-	<section>
-		<h2>Experiencia laboral</h2>
-		<ul>
-			<li>
-				<h3>AUXILIAR INFORMATICO</h3>
-				<p>Electrodomésticos Alfer - 80 Horas</p>
-			</li>
-			<li>
-				<h3>AUXILIAR INFORMATICO</h3>
-				<p>PCBOX Ourense - 80 horas</p>
-			</li>
-		</ul>
-	</section>
+        <section id="cursos">
+            <h2>Cursos AFD</h2>
+            <ul>
+                <li>IFCT0609 - Programación de sistemas informáticos (510h)</li>
+                <li>IFCD0210 - Desarrollo de aplicaciones con tecnología Web (590h)</li>
+                <li>IFCT0108 - Operaciones Aux. de montaje y mantenimiento de sistemas microinformáticos (388h)</li>
+                <li>IFCT0209 - Sistemas microinformáticos (600h)</li>
+                <li>IFCD0110 - Diseño y publicación de páginas Web (578h)</li>
+            </ul>
+        </section>
 
-	<section>
-		<h2>Cursos</h2>
-		<ul>
-			<li>IFCT0609 - Programación de sistemas informáticos (510h)</li>
-			<li>IFCD0210 - Desarrollo de aplicaciones con tecnología Web (590h)</li>
-			<li>IFCT0108 - Operaciones Aux. de montaje y mantenimiento de sistemas microinformáticos (388h)</li>
-			<li>IFCT0209 - Sistemas microinformáticos (600h)</li>
-			<li>IFCD0110 - Diseño y publicación de páginas Web (578h)</li>
-		</ul>
-	</section>
+        <section id="idiomas">
+            <h2>Idiomas</h2>
+            <ul>
+                <li>Castellano - Nativo.</li>
+            </ul>
+        </section>
 
-	<section>
-		<h2>Información personal</h2>
-		<p>Fecha de nacimiento: 28/07/1988</p>
-		<p>Edad: 33 años</p>
-		<p>Idiomas: Castellano (Nativo)</p>
-	</section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <ul>
+                <li>28/07/1988 - 33 años</li>
+                <li>666 07-17-31</li>
+                <li><a href="mailto:jesusgomezdias@outlook.com">jesusgomezdias@outlook.com</a></li>
+            </ul>
+        </section>
 
+        <section id="repos">
+            <h2>Repositorios en Github</h2>
+            <ul id="repo-list"></ul>
+        </section>
+    </main>
+
+    <script src="mis-repos.js"></script>
 </body>
 </html>
