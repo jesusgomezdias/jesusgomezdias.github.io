@@ -1,25 +1,12 @@
-const reposContainer = document.querySelector("#repos-container");
-const reposError = document.querySelector("#repos-error");
-
-// Obtener los repositorios de GitHub
-fetch("https://api.github.com/users/jesusgomezdias/repos")
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error("No se pudo obtener los repositorios.");
-    }
-    return response.json();
-  })
-  .then((data) => {
-    // Mostrar los repositorios en la página
-    data.forEach((repo) => {
-      const repoLink = document.createElement("a");
-      repoLink.href = repo.html_url;
-      repoLink.textContent = repo.name;
-      repoLink.target = "_blank";
-      reposContainer.appendChild(repoLink);
+$(document).ready(function(){
+    // Hacer una petición GET a la API de Github
+    $.get("https://api.github.com/users/jesusgomezdias/repos", function(data, status){
+        // Iterar sobre la respuesta de la API y agregar elementos a la lista
+        data.forEach(function(repo){
+            var listItem = $("<li></li>");
+            var link = $("<a></a>").attr("href", repo.html_url).text(repo.name);
+            listItem.append(link);
+            $("#repo-list").append(listItem);
+        });
     });
-  })
-  .catch((error) => {
-    console.error(error);
-    reposError.textContent = "No se pudieron obtener los repositorios.";
-  });
+});
