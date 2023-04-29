@@ -1,0 +1,48 @@
+/* Estilo del encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Estilo de la sección */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+/* Estilo de la lista de experiencia laboral */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li h3 {
+    margin-top: 0;
+}
+
+/* Estilo de la información personal */
+section p {
+    margin-bottom: 5px;
+}
+
+/* Estilo del enlace de correo electrónico y número de teléfono */
+section a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+section a:hover {
+    color: #666;
+}
