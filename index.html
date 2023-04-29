@@ -1,50 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <title>Jesús Gómez - Currículum</title>
-     <!-- Cargar la biblioteca de jQuery -->
-     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>// Obtener el elemento del botón de menú y el menú desplegable
-const menuBtn = document.querySelector(".menu-btn");
-const menu = document.querySelector(".menu");
-
-// Inicializar el estado del menú
-let menuOpen = false;
-
-// Agregar un evento de clic al botón de menú
-menuBtn.addEventListener("click", () => {
-  // Cambiar el estado del menú
-  if (!menuOpen) {
-    menuBtn.classList.add("open");
-    menu.classList.add("show");
-    menuOpen = true;
-  } else {
-    menuBtn.classList.remove("open");
-    menu.classList.remove("show");
-    menuOpen = false;
-  }
-});</script>
-    <!-- Cargar el archivo JavaScript de tus repositorios -->
-    <script src="misrepos.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-  <nav>
-    <div class="menu-btn">
-      <div class="menu-btn__burger"></div>
-    </div>
-    <ul class="menu">
-      <li><a href="#about">Sobre mí</a></li>
-      <li><a href="#skills">Habilidades</a></li>
-      <li><a href="#experience">Experiencia laboral</a></li>
-      <li><a href="#education">Educación</a></li>
-      <li><a href="#projects">Proyectos</a></li>
-      <li><a href="#contact">Contacto</a></li>
-    </ul>
-  </nav>
-</header>
+        <nav>
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#experience">Experiencia laboral</a></li>
+                <li><a href="#education">Educación</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
     
     <main>
         <section id="experiencia">
@@ -94,6 +71,7 @@ menuBtn.addEventListener("click", () => {
         </section>
     </main>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="mis-repos.js"></script>
 </body>
 </html>
