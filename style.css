@@ -1,91 +1,59 @@
-/* Estilos generales */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  color: #333;
-  background-color: #fff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-a {
-  text-decoration: none;
-  color: #0066cc;
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
 }
 
-ul {
-  list-style: none;
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
 }
 
-/* Estilos específicos */
-
-/* Encabezados */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  margin-bottom: 20px;
+header p {
+    margin: 0.5rem 0;
 }
 
-h1 {
-  font-size: 3rem;
+section {
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 80%;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 h2 {
-  font-size: 2.5rem;
+    margin-top: 0;
+    color: #333;
 }
 
-h3 {
-  font-size: 2rem;
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Enlaces */
-a:hover {
-  text-decoration: underline;
+ul li {
+    background: #f9f9f9;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
 }
 
-/* Secciones */
-section {
-  margin-bottom: 50px;
-}
-
-section h2 {
-  color: #0066cc;
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-}
-
-/* Lista de repositorios */
-#repo-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.repo {
-  width: calc(50% - 10px);
-  margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-.repo:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.repo h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.repo p {
-  font-size: 1rem;
-  color: #999;
-  margin-bottom: 10px;
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
